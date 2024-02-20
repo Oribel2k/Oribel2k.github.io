@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Login / register material design form</title>
+  <link rel='stylesheet' href="styles/materialize.min (1).css"><link rel="stylesheet" href="styles/style.css">{}
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="container white z-depth-2">
+	<ul class="tabs teal">
+		<li class="tab col s3"><a class="white-text active" href="#login">login</a></li>
+		<li class="tab col s3"><a class="white-text" href="#register">register</a></li>
+	</ul>
+	<div id="login" class="col s12">
+		<form class="col s12">
+			<div class="form-container">
+				<h3 class="teal-text">Hello</h3>
+				<div class="row">
+					<div class="input-field col s12">
+						<input id="login2" type="text" class="validate">
+						<label for="login2">Login</label>
+					</div>
+				</div>
+				<div class="row">
+					<div class="input-field col s12">
+						<input id="password2" type="password" class="validate">
+						<label for="password2">Password</label>
+					</div>
+				</div>
+				<br>
+				<center>
+					<button class="btn waves-effect waves-light teal" id="btn2" type="submit" name="action">Connect</button>
+					<br>
+					<br>
+					<div class="form-container center">MESSAGE APRES SOUMISSION</div>
+				</center>
+			</div>
+		</form>
+	</div>
+	<div id="register" class="col s12">
+		<form class="col s12" method="post" action="traitement.php">
+			<div class="form-container">
+				<h3 class="teal-text">Welcome</h3>
+				<div class="row">
+					<div class="input-field col s6">
+						<input id="first_name" name="first_name" type="text" class="validate">
+						<label for="first_name">First Name</label>
+					</div>
+					<div class="input-field col s6">
+						<input id="last_name" name="last_name" type="text" class="validate">
+						<label for="last_name">Last Name</label>
+					</div>
+				</div>
+				<div class="row">
+					<div class="input-field col s12">
+						<input id="sexe" name="sexe" type="text" class="validate">
+						<label for="sexe">Sexe</label>
+					</div>
+				</div>
+				<div class="row">
+					<div class="input-field col s12">
+						<input id="login" name="login" type="text" class="validate">
+						<label for="login">Login</label>
+					</div>
+				</div>
+				<div class="row">
+					<div class="input-field col s12">
+						<input id="password" name="password" type="password" class="validate" required>
+						<label for="password">Password</label>
+					</div>
+				</div>
+				<div class="row">
+					<div class="input-field col s12">
+						<input id="password-confirm" type="password" class="validate">
+						<label for="password-confirm">Password Confirmation</label>
+					</div>
+				</div>
+				<center>
+					<button class="btn waves-effect waves-light teal" id="btn1" type="submit" name="action">Submit</button>
+				</center>
+			</div>
+		</form>
+	</div>
+</div>
+<!-- partial -->
+<script src='scripts/jquery-2.1.1.min.js'></script>
+<script src='scripts/materialize.min.js'></script><script  src="scripts/script.js"></script>
+
+</body>
+</html>

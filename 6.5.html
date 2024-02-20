@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Listes à choix multiples</title>
+</head>
+<body>
+<form method="post" action="exemple6.5.php" >
+<fieldset>
+<legend>Recherche d’emploi : complétez la fiche</legend>
+<div>
+<span>
+Nom<input type="text" name="ident[]" />
+Prénom<input type="text" name="ident[]" />
+Âge<input type="number" step="1" name="ident[]" />
+<br /><br />
+Langues pratiquées<br />
+<select name="lang[]" multiple="multiple">
+<option value="français"> français</option>
+<option value="anglais"> anglais</option>
+<option value="allemand"> allemand</option>
+<option value="espagnol"> espagnol</option>
+</select><br /><br />
+Compétences informatiques<br />
+HTML 5<input type="checkbox" name="competent[]" value="HTML 5" />
+CSS 3<input type="checkbox" name="competent[]" value="CSS 3" />
+PHP<input type="checkbox" name="competent[]" value="PHP" />
+MySQL<input type="checkbox" name="competent[]" value="MySQL" />
+</span><br /><br />
+<input type="reset" value="EFFACER"/>
+<input type="submit" value="ENVOI"/>
+</div>
+</fieldset>
+</form>
+</body>
+</html>
